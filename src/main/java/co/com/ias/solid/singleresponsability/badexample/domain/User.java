@@ -17,10 +17,9 @@ public class User {
 
     public void sendEmailNotification(String message, User user){
         // logic to send a message to an user
-        logger.info(String.format("Message: %s\nSent to: %s\nUser name: %s",
+        logger.info(String.format("Message: %s\nSent to: %s",
                 message,
-                user.getEmail(),
-                user.getName()));
+                user.getEmail()));
     }
 
 }

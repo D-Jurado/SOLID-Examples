@@ -10,19 +10,17 @@ public class NotificationService {
 
     private static final Logger logger = Logger.getLogger(NotificationService.class.getName());
 
-    public void sendEmailNotification(String message, User user){
+    public void sendEmailNotification(String message, String email){
         //logic to send an email notification
-        logger.info(String.format("Message: %s\nSent to: %s\nUser name: %s",
+        logger.info(String.format("Message: %s\nSent to: %s",
                 message,
-                user.getEmail(),
-                user.getName()));
+                email));
     }
 
-    public void sendSMSNotification(String message, User user){
+    public void sendSMSNotification(String message, String phoneNumber){
         //Logic to send a SMS notification
-        logger.info(String.format("Message: %s\nSent to: %s\nUser name: %s",
+        logger.info(String.format("Message: %s\nSent to: %s",
                 message,
-                user.getPhoneNumber(),
-                user.getName()));
+                phoneNumber));
     }
 }

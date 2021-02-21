@@ -10,8 +10,8 @@ public class Main {
     public static void main(String[] args) {
         User user = new User("David", "+57314", "david@example.com");
 
-        notificationService.sendEmailNotification("Email message", user);
-        notificationService.sendSMSNotification("SMS message", user);
+        notificationService.sendEmailNotification("Email message", user.getEmail());
+        notificationService.sendSMSNotification("SMS message", user.getPhoneNumber());
 
     }
 }
