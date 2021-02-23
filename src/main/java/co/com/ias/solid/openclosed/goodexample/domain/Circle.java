@@ -5,7 +5,7 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 public class Circle implements Polygon{
 
-    private double radius;
+    private final double radius;
 
     @Override
     public double getArea() {

@@ -2,7 +2,7 @@
 
 En este caso vemos un mal uso de este principio ejecutando diferente lógica según el tipo de polígono que recibió el
 método <u>*calculateSumArea*</u>. Si bien podría considerar realizar cambios en el método para no repetir las
-validaciones de tipo de polígono, por ejemplo, recibiendo un array de objetos y un realizar un ciclo sobre dicho array,
+validaciones de tipo de polígono, por ejemplo, recibiendo un array de objetos y realizar un ciclo sobre dicho array,
 uno de los problemas más grandes realmente radica en la validación que debe realizar sobre el tipo de polígono.
 Esta lógica puede llegar a ser confusa y, además, no es escalable a medida que la aplicación permita otros tipos de
 polígonos.
