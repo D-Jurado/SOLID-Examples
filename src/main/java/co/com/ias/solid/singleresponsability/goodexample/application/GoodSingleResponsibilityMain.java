@@ -3,7 +3,7 @@ package co.com.ias.solid.singleresponsability.goodexample.application;
 import co.com.ias.solid.singleresponsability.goodexample.domain.User;
 import co.com.ias.solid.singleresponsability.goodexample.service.NotificationService;
 
-public class Main {
+public class GoodSingleResponsibilityMain {
 
     private static final NotificationService notificationService = new NotificationService();
 

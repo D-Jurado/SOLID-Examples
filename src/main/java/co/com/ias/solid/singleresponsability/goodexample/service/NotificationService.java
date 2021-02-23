@@ -1,6 +1,5 @@
 package co.com.ias.solid.singleresponsability.goodexample.service;
 
-import co.com.ias.solid.singleresponsability.goodexample.domain.User;
 import lombok.NoArgsConstructor;
 
 import java.util.logging.Logger;
