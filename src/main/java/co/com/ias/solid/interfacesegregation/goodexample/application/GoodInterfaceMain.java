@@ -8,13 +8,16 @@ public class GoodInterfaceMain {
 
     public static void main(String[] args) {
         AdminUser admin = new AdminUser();
-        admin.createResource("Server2");
+        System.out.println("============= Admin operations =============");
+        System.out.println(admin.createResource("Server2"));
         admin.deleteResource("Server");
 
         AuditorUser auditor = new AuditorUser();
-        auditor.getResourceBill("Database");
+        System.out.println("============= Auditor operations =============");
+        System.out.println("Bill: " + auditor.getResourceBill("Database"));
 
         AnonymousUser invited = new AnonymousUser();
+        System.out.println("============= Public operations =============");
         invited.getPublicResources();
     }
 

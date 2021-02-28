@@ -3,6 +3,8 @@ package co.com.ias.solid.interfacesegregation.goodexample.domain;
 import co.com.ias.solid.interfacesegregation.goodexample.domain.operations.AuditorOperations;
 import org.javamoney.moneta.Money;
 
+import javax.money.Monetary;
+
 public class AuditorUser implements AuditorOperations {
 
     @Override
@@ -12,6 +14,6 @@ public class AuditorUser implements AuditorOperations {
 
     @Override
     public Money getResourceBill(String resourceName) {
-        return Money.of(200, "usd");
+        return Money.of(200, Monetary.getCurrency("USD"));
     }
 }
